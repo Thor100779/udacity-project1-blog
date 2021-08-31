@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Watching Paint Dry</title>
-    <link href="css/styles.css" rel="stylesheet"/>
+    <link href="css/contact_styles.css" rel="stylesheet"/>
   </head>
   <body>
     <div id="container">
@@ -29,31 +29,16 @@
       </div>
       <div id="content" class="box">
         <div id="content_container">
-          <h1 id="content_title">Recent Posts</h1>
-          <div id="post_1_card" class="post_card" onclick="location.href='blog_post.html?post=garbage';">
-            <img class="post_image" src="images/garbage_day.jpg" />
-            <h2 class="blog_card_title">Garbage Day</h2>
-          </div>
-          <div id="post_2_card" class="post_card" onclick="location.href='blog_post.html?post=knitting';">
-            <img class="post_image" src="images/knitting.jpg" />
-            <h2 class="blog_card_title">Friday Night Knitting</h2>
-          </div>
-          <div id="post_3_card" class="post_card" onclick="location.href='blog_post.html?post=golf';">
-            <img class="post_image" src="images/watching_golf.jpg" />
-            <h2 class="blog_card_title">Watching Golf</h2>
-          </div>
-          <div id="post_4_card" class="post_card" onclick="location.href='blog_post.html?post=paint';">
-            <img class="post_image" src="images/painting.jpg" />
-            <h2 class="blog_card_title">Look at that Paint Dry</h2>
-          </div>
-          <div id="post_5_card" class="post_card" onclick="location.href='blog_post.html?post=grocery';">
-            <img class="post_image" src="images/grocery_shopping.jpg" />
-            <h2 class="blog_card_title">Grocery Grabbin'</h2>
-          </div>
-          <div id="post_6_card" class="post_card" onclick="location.href='blog_post.html?post=laundry';">
-            <img class="post_image" src="images/laundry.jpg" />
-            <h2 class="blog_card_title">Texas Fold 'Em</h2>
-          </div>
+          <h1 id="content_title" class="test_box">Contact Me</h1>
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Sound off here..."></textarea>
+            <input type="submit" value="Submit">
+          </form>
         </div>
       </div>
       <div id="footer" class="box">

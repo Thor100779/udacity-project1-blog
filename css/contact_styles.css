@@ -1,0 +1,89 @@
+@import "header.css";
+@import "footer.css";
+@import "navigation.css";
+
+body {
+  background-color: #fff6e9;
+  font-family: "Lucida Bright", cursive, "Gill Sans", Georgia, sans-serif;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: minmax(auto, 100vw);
+  grid-template-rows: 10% 60% 10% 10% 10%;
+  grid-template-areas:
+    "head"
+    "main"
+    "left"
+    "right"
+    "foot";
+  grid-gap: 5px;
+}
+
+#content_container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff6e9;
+}
+
+.box {
+  background: #f8fa9d;
+  padding: 10px;
+  margin: 0px 2px 2px 2px;
+  border-radius: 5px;
+}
+
+@media(min-width: 900px) {
+  #container {
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas:
+      "head head head"
+      "left main right"
+      "foot foot foot";
+  }
+
+  .blog_card_title {
+    font-size: 20px;
+  }
+}
+
+/* Main content section */
+#content {
+  grid-area: main;
+  background-color: #fff6e9;
+}
+
+#content_title {
+  grid-area: title;
+  text-align: center;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #9bceb5;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: green;
+}
+
+#subject {
+  height: 200px;
+}

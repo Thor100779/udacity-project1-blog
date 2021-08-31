@@ -1,6 +1,5 @@
 #header {
   grid-area: head;
-  /*background: linear-gradient(to bottom, #7927b2, #fb3182);*/
   background-color: #9bceb5;
   order: 1;
 }

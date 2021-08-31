@@ -66,4 +66,5 @@ body {
 #content_title {
   grid-area: title;
   text-align: center;
+  color: #b85c3c;
 }

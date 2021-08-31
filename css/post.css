@@ -1,0 +1,29 @@
+#content {
+  grid-area: main;
+  background-color: #fff6e9;
+  order: 3;
+}
+
+#content_container {
+  display: flex;
+  flex-direction: column;
+}
+
+#post_image {
+  background-image: linear-gradient(red, yellow, blue);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 600px;
+  border: 1px dotted black;
+  text-align: center;
+  align-self: center;
+}
+
+#post_title {
+  text-align: center;
+}
+
+#author {
+  text-align: center;
+}

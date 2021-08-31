@@ -1,0 +1,7 @@
+#footer {
+  grid-area: foot;
+  text-align: center;
+  color: white;
+  background-color: #161514;
+  /*order: 5;*/
+}

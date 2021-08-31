@@ -11,17 +11,14 @@
   grid-template-rows: 10%;
   grid-template-areas:
     "logo title social";
-  border: 1px dotted black;
 }
 
 .header_box {
-  border: 1px solid green;
   height: 75px;
 }
 
 #social_media_container {
   grid-area: social;
-  border: 2px solid black;
   display: grid;
   align-items: center;
   justify-content: flex-end;

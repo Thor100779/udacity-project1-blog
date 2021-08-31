@@ -17,12 +17,10 @@ body {
     "left"
     "right"
     "foot";
-  border: 2px solid yellow;
-  grid-gap: 5px;
+  grid-gap: 1px;
 }
 
 .box {
-  border: 1px solid red;
   background: #F8FA9D;
   padding: 10px;
   margin: 2px;
@@ -38,28 +36,7 @@ body {
       "head head head"
       "left main right"
       "foot foot foot";
-    border: 5px solid blue;
   }
-}
-
-/* Nav bar */
-#left_sidebar {
-  grid-area: left;
-  background-color: #b85c3c;
-  order: 2;
-}
-
-#nav_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.nav_box {
-  border: 1px solid green;
-  height: 50px;
-  width: 125px;
-  text-align: center;
 }
 
 /* Related posts bar */
@@ -76,8 +53,9 @@ body {
 }
 
 .right_box {
-  border: 1px solid purple;
   height: 50px;
   width: 125px;
   text-align: center;
+  justify-content: center;
+  margin: 15px auto;
 }

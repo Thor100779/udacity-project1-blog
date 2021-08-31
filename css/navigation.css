@@ -1,7 +1,7 @@
-/*#left_sidebar {
+/* Nav bar */
+#left_sidebar {
   grid-area: left;
   background-color: #b85c3c;
-  order: 2;
 }
 
 #nav_container {
@@ -11,9 +11,13 @@
 }
 
 .nav_box {
-  border: 1px solid green;
+  background-color: #e5af7d;
   height: 50px;
-  width: 125px;
+  width: 100px;
+  line-height: 50px;
   text-align: center;
+  justify-content: center;
+  margin: 5px auto;
+  border-radius: 5px;
+  cursor: pointer;
 }
-*/

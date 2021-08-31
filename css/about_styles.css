@@ -1,7 +1,6 @@
 @import "header.css";
 @import "footer.css";
 @import "navigation.css";
-@import "post_card.css";
 
 body {
   background-color: #fff6e9;
@@ -23,15 +22,26 @@ body {
 
 #content_container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 20% 20% 20% 20%;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 20% 40% 40%;
   grid-gap: 10px;
   grid-template-areas:
-    "title title title"
-    "post1 post2 post3"
-    "post4 post5 post6"
-    "foot foot foot";
+    "title title"
+    "avatar bio"
+    "author school";
   background-color: #fff6e9;
+}
+
+#avatar {
+  grid-area: avatar;
+}
+
+#author {
+  grid-area: author;
+}
+
+#bio {
+  grid-area: bio;
 }
 
 .box {

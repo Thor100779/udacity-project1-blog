@@ -27,29 +27,29 @@ body {
   grid-gap: 10px;
   grid-template-areas:
     "title title title"
-    "avatar bio bio"
-    "caption author school";
+    "figure bio bio"
+    "figure author school";
   background-color: #fff6e9;
 }
 
-#avatar {
-  grid-area: avatar;
+#figure {
+  grid-area: figure;
 }
 
 #author {
   grid-area: author;
 }
 
+#school {
+  grid-area: school;
+}
+
 #bio {
   grid-area: bio;
 }
 
-#caption {
-  grid-area: caption;
-}
-
 .box {
-  background: #F8FA9D;
+  background: #f8fa9d;
   padding: 10px;
   margin: 0px 2px 2px 2px;
   border-radius: 5px;

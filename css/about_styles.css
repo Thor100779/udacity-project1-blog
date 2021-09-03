@@ -8,7 +8,7 @@ body {
 }
 
 #container {
-  display: grid;
+  /*display: grid;
   grid-template-columns: minmax(auto, 100vw);
   grid-template-rows: 10% 60% 10% 10% 10%;
   grid-template-areas:
@@ -17,20 +17,30 @@ body {
     "left"
     "right"
     "foot";
-  grid-gap: 5px;
+  grid-gap: 5px;*/
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
 }
 
 #content_container {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 20% 40% 40%;
+  display: flex;
+  flex-direction: column;
+  /*grid-template-columns: 100%;
+  grid-template-rows: 5% 5% 5% 10% 10%;
   grid-gap: 10px;
   grid-template-areas:
-    "title title title"
-    "figure bio bio"
-    "figure author school";
+    "title"
+    "author"
+    "school"
+    "figure"
+    "bio";*/
   background-color: #fff6e9;
 }
+
+/*.test_box {
+  border: 1px solid red;
+}*/
 
 #figure {
   grid-area: figure;
@@ -59,15 +69,36 @@ body {
   #container {
     display: grid;
     grid-template-columns: 1fr 7fr 1fr;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 12% 12% 70% 10%;
     grid-template-areas:
       "head head head"
-      "left main right"
+      "nav nav nav"
+      "main main right"
       "foot foot foot";
+  }
+
+  #content_container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 20% 40% 40%;
+    grid-gap: 10px;
+    grid-template-areas:
+      "title title title"
+      "figure bio bio"
+      "figure author school";
+    background-color: #fff6e9;
   }
 
   .blog_card_title {
     font-size: 20px;
+  }
+
+  #author {
+    padding-top: 45px;
+  }
+
+  #school {
+    padding-top: 35px;
   }
 }
 
@@ -75,6 +106,7 @@ body {
 #content {
   grid-area: main;
   background-color: #fff6e9;
+  order: 3;
 }
 
 #content_title {

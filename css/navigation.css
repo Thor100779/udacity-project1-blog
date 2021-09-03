@@ -1,12 +1,13 @@
 /* Nav bar */
 #left_sidebar {
-  grid-area: left;
+  grid-area: nav;
   background-color: #b85c3c;
+  order: 2;
 }
 
 #nav_container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -20,4 +21,10 @@
   margin: 5px auto;
   border-radius: 5px;
   cursor: pointer;
+}
+
+@media(min-width: 900px) {
+  #nav_container {
+    margin-bottom: 35px;
+  }
 }

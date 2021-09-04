@@ -8,7 +8,7 @@ body {
 }
 
 #container {
-  display: grid;
+  /*display: grid;
   grid-template-columns: minmax(auto, 100vw);
   grid-template-rows: 10% 60% 10% 10% 10%;
   grid-template-areas:
@@ -17,7 +17,10 @@ body {
     "left"
     "right"
     "foot";
-  grid-gap: 5px;
+  grid-gap: 5px;*/
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
 }
 
 #content_container {
@@ -37,10 +40,11 @@ body {
   #container {
     display: grid;
     grid-template-columns: 1fr 7fr 1fr;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 12% 12% 70% 10%;
     grid-template-areas:
       "head head head"
-      "left main right"
+      "nav nav nav"
+      ". main right"
       "foot foot foot";
   }
 
@@ -53,6 +57,7 @@ body {
 #content {
   grid-area: main;
   background-color: #fff6e9;
+  order: 3;
 }
 
 #content_title {

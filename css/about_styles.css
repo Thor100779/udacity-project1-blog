@@ -36,6 +36,9 @@ body {
     "figure"
     "bio";*/
   background-color: #fff6e9;
+  justify-content: center;
+  /*border: 1px solid red;*/
+  margin: auto;
 }
 
 /*.test_box {
@@ -44,14 +47,20 @@ body {
 
 #figure {
   grid-area: figure;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
 }
 
 #author {
   grid-area: author;
+  text-align: center;
 }
 
 #school {
   grid-area: school;
+  text-align: center;
 }
 
 #bio {
@@ -73,7 +82,7 @@ body {
     grid-template-areas:
       "head head head"
       "nav nav nav"
-      "main main right"
+      ". main ."
       "foot foot foot";
   }
 

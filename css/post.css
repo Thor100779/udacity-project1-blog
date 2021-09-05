@@ -13,7 +13,7 @@
   background-image: linear-gradient(red, yellow, blue);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 600px;
+  width: 100%;
   text-align: center;
   align-self: center;
 }
@@ -22,7 +22,7 @@
   text-align: center;
   color: #b85c3c;
   font-style: italic;
-  font-weight: bold;  
+  font-weight: bold;
 }
 
 #author {

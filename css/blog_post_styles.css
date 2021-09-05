@@ -10,16 +10,9 @@ body {
 }
 
 #container {
-  display: grid;
-  grid-template-columns: minmax(auto, 100vw);
-  grid-template-rows: 10% 60% 10% 10% 10%;
-  grid-template-areas:
-    "head"
-    "main"
-    "left"
-    "right"
-    "foot";
-  grid-gap: 1px;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
 }
 
 .box {
@@ -32,11 +25,12 @@ body {
 @media(min-width: 900px) {
   #container {
     display: grid;
-    grid-template-columns: 12% 76% 12%;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 10% 6.5% 80% 6%;
     grid-template-areas:
       "head head head"
-      "left main right"
+      "nav nav nav"
+      ". main right"
       "foot foot foot";
   }
 }

@@ -30,7 +30,6 @@ body {
 @media(min-width: 600px) {
   #content_container {
     padding: 0px 160px;
-    /*justify-content: space-around;*/
   }
 }
 
